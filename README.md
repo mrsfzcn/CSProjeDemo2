@@ -42,4 +42,4 @@ Maaş raporu ayrıntılı olarak konsola yazdırılır ve aynı zamanda maas_bor
 Personel bilgilerini JSON dosyasından okumak için JSON Simple kütüphanesi kullanılmıştır.
 
 
-Bu README dosyası, proje hakkında temel bilgileri ve kullanım talimatlarını içerir. Gerçek projenize göre özelleştirebilirsiniz.
+Bu README dosyası, proje hakkında temel bilgileri ve kullanım talimatlarını içerir. Gerçek projenize göre özelleştirebilirsiniz. 
