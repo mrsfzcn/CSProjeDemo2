@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mert",
+    "surname": "Bal",
+    "role": "Yonetici",
+    "bonus": 1500,
+    "calismaSaati": 0,
+    "saatlikUcret": 0
+  },
+  {
+    "name": "Emre",
+    "surname": "Baskentli",
+    "role": "Memur",
+    "calismaSaati": 0,
+    "derece": "JUNIOR",
+    "saatlikUcret": 0
+  },
+  {
+    "name": "Ali",
+    "surname": "Ihsan",
+    "role": "Yonetici",
+    "bonus": 1700,
+    "calismaSaati": 0,
+    "saatlikUcret": 0
+  },
+  {
+    "name": "Osman",
+    "surname": "Haluk",
+    "role": "Memur",
+    "calismaSaati": 0,
+    "derece": "MID",
+    "saatlikUcret": 0
+  },
+  {
+    "name": "Ahmet",
+    "surname": "Aslanli",
+    "role": "Memur",
+    "calismaSaati": 0,
+    "derece": "SENIOR",
+    "saatlikUcret": 0
+  },
+  {
+    "name": "Cenk",
+    "surname": "Yolaroglu",
+    "role": "Yonetici",
+    "bonus": 2500,
+    "calismaSaati": 0,
+    "saatlikUcret": 0
+  }
+]

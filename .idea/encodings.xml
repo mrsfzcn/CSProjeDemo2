@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1254">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/exception/ErrorMessage.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/exception/ErrorType.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/exception/ExceptionManager.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/exception/GlobalExceptionHandler.java" charset="windows-1254" />
+  </component>
+</project>
