@@ -1,5 +1,6 @@
-package org.example;
+package org.example.bordro.dao;
 
+import org.example.bordro.model.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

@@ -1,5 +1,8 @@
-package org.example;
+package org.example.bordro.service;
 
+import org.example.bordro.model.Memur;
+import org.example.bordro.model.Personel;
+import org.example.bordro.model.Yonetici;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -9,14 +12,14 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-public class MaasBordro {
-    public void maaslariHesapla(List<Personel> personeller) {
+public class MaasBordroServis {
+    public static void maaslariHesapla(List<Personel> personeller) {
         for (Personel personel : personeller) {
             personel.maasHesapla(personel);
         }
     }
 
-    public void ayrintiliRapor(List<Personel> personeller) {
+    public static void tumPersonelBordroRaporuOlustur(List<Personel> personeller) {
         try {
             FileWriter writer = new FileWriter("maas_bordrosu.json");
 
@@ -33,8 +36,8 @@ public class MaasBordro {
                 personelJSON.put("AD", personel.isim);
                 personelJSON.put("SOYAD", personel.soyisim);
                 personelJSON.put("Maas", personel.getOdemeDetay().getToplamOdeme());
-                personelJSON.put("CalismaSaati", personel.getOdemeDetay().getCalismaSaati());
-                personelJSON.put("SaatlikUcret", personel.getOdemeDetay().getSaatlikUcret());
+                personelJSON.put("CalismaSaati", personel.getCalismaDetay().getCalismaSaati());
+                personelJSON.put("SaatlikUcret", personel.getCalismaDetay().getSaatlikUcret());
                 personelArray.add(personelJSON);
             }
 
@@ -47,7 +50,7 @@ public class MaasBordro {
         }
     }
 
-    public void maasBilgileriniKaydet(List<Personel> personelListesi) {
+    public static void bordroRaporuOlustur(List<Personel> personelListesi) {
         LocalDateTime simdikiZaman = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM yyyy");
         String zamanDamgasi = simdikiZaman.format(formatter);
@@ -84,7 +87,7 @@ public class MaasBordro {
         }
     }
 
-    public void raporGoruntule(List<Personel> personeller) {
+    public static void raporGoruntule(List<Personel> personeller) {
         System.out.println("****************************************************");
         System.out.println("Personel Maaş Raporu");
         System.out.println("****************************************************");
@@ -95,7 +98,7 @@ public class MaasBordro {
         String ANSI_GREEN = "\u001B[32m";
         String ANSI_RED = "\u001B[31m";
         for (Personel personel : personeller) {
-            double calismaSaati = personel.getOdemeDetay().getCalismaSaati();
+            double calismaSaati = personel.getCalismaDetay().getCalismaSaati();
             if (calismaSaati < 150) {
                 System.out.print(ANSI_YELLOW);
             }
@@ -103,7 +106,7 @@ public class MaasBordro {
                 System.out.print(ANSI_RED);
             }
             double toplamMaas = personel.getOdemeDetay().getToplamOdeme();
-            double saatlikUcret = personel.getOdemeDetay().getSaatlikUcret();
+            double saatlikUcret = personel.getCalismaDetay().getSaatlikUcret();
             System.out.printf("%-20s%-20s%-15.2f%-15.2f%-15.2f%n",
                     personel.getIsim(), personel.getSoyisim(), calismaSaati, saatlikUcret, toplamMaas);
             System.out.print(ANSI_RESET);

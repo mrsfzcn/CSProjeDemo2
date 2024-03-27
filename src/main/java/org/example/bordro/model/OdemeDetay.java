@@ -1,12 +1,11 @@
-package org.example;
+package org.example.bordro.model;
 
 public class OdemeDetay {
     private double anaOdeme;
     private double mesai;
     private double toplamOdeme;
     private double bonus;
-    private double saatlikUcret;
-    private double calismaSaati;
+
 
     public double getAnaOdeme() {
         return anaOdeme;
@@ -40,19 +39,4 @@ public class OdemeDetay {
         this.bonus = bonus;
     }
 
-    public double getSaatlikUcret() {
-        return saatlikUcret;
-    }
-
-    public void setSaatlikUcret(double saatlikUcret) {
-        this.saatlikUcret = saatlikUcret;
-    }
-
-    public double getCalismaSaati() {
-        return calismaSaati;
-    }
-
-    public void setCalismaSaati(double calismaSaati) {
-        this.calismaSaati = calismaSaati;
-    }
 }
