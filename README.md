@@ -8,7 +8,7 @@ Bu Java uygulaması, bir şirketteki personelin maaş bilgilerini hesaplamak ve 
    - İsim
    - Soyisim
    - Rol (Yönetici veya Memur)
-   - Çalışma Saati (Yönetici için)
+   - Çalışma Saati 
    - Saatlik Ücret (Yönetici için)
    - Derece (Memur için)
    - Saatlik Ücret (Memur için)
